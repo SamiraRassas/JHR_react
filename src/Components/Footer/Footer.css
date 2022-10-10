@@ -1,0 +1,170 @@
+a {
+    color: inherit;
+}
+.item1 {
+    border: none;
+    background-color: inherit;
+    color: rgb(71, 78, 83);
+    padding-left: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.item1:hover {
+    text-decoration: none;
+    color: #48976a;
+}
+.item1:focus {
+    outline: 0;
+}
+.item2 {
+    background:rgb(65, 103, 173);
+    color: white;
+    margin: 1px;
+    font-size: 15px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.item3 {
+    font-size: 20px;
+    background: rgb(65, 103, 173);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+.item3:hover {
+    background-color: #d0d0d0;
+    transition: 0.4s;
+}
+.item4 {
+    font-size: 20px;
+    background: rgb(65, 103, 173);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+.item4:hover {
+    background-color: #6d92dc;
+    transition: 0.4s;
+}
+.item5 {
+    color:white;
+    font-size: 20px;
+    background: rgb(65, 103, 173);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item6 {
+    color:white;
+    justify-content: center;
+    align-items: center;
+}
+.item5:hover {
+    background-color: #bf52c5;
+    transition: 0.4s;
+}
+.item6:hover {
+    color: #dd2f2f;
+    transition: 0.4s;
+}
+
+.footer-container {
+    /* color: rgb(71, 78, 83); */
+    text-align: center;
+    background-color: rgb(65, 103, 173);
+    font-size: 15px;
+    width: 100%;
+    height: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .item1 {
+        font-size: 12px;
+        padding-left: 3px;
+    }
+    .item2 {
+        font-size: 7px;
+    }
+    .item3,
+    .item4,
+    .item5{
+        font-size: 12px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .item1 {
+        font-size: 14px;
+        padding-left: 5px;
+    }
+    .item2 {
+        font-size: 9px;
+    }
+    .item3,
+    .item4,
+    .item5{
+        font-size: 14px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .item1 {
+        font-size: 16px;
+        padding-left: 6px;
+    }
+    .item2 {
+        font-size: 11px;
+    }
+    .item3,
+    .item4,
+    .item5 {
+        font-size: 16px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .item1 {
+        font-size: 18px;
+        padding-left: 8px;
+    }
+    .item2 {
+        font-size: 13px;
+    }
+    .item3,
+    .item4,
+    .item5{
+        font-size: 18px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .item1 {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+    .item2 {
+        font-size: 15px;
+    }
+    .item3,
+    .item4,
+    .item5 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,19 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+  }
+article {
+    margin-top: 5%;
+    background-color:rgb(65, 103, 173);   
+
+}
+.footer{
+  flex: 1
+}
+.measure{
+  color:white;}
+
+
