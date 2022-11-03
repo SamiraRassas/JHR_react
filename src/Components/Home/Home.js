@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState , useEffect} from "react";
 import { Link } from "react-router-dom";
 import { getHomes, getHomesByLocation,getHomesbyId } from "../../data/homes.js";
 import Button from "react-bootstrap/Button";
@@ -13,6 +13,8 @@ import Homedetails from "./HomeDetails.js";
 import Search from "./Search.js";
 import { FormControlLabel, Checkbox } from "@mui/material";
 import Ownerdetails from "./ShowOwnerInfo.js";
+import axios from "axios"
+
 
 const Home = () => {
   let filteredHomes;
@@ -35,6 +37,27 @@ const Home = () => {
       //your code to be executed after 1 second
     }, 1000);
   };
+
+  const [qb, setQb] = useState ([]);
+
+  // function to fetch the data from 'fantasy_football' database
+  const getData = async () => {
+    try {
+      const response = await axios.get('http://localhost:4000/home');
+      await setQb(response.data);
+      console.log(response.data);
+
+    } catch (error) {
+      console.log(error);
+
+    }
+  };
+
+  // React Hook that executes the fetch function on the first render 
+  useEffect(() => {
+    getData();
+  }, []);
+
   return (
     <>
       <div className="search">
@@ -87,7 +110,7 @@ const Home = () => {
         </div>
       </div>
       <div className="cards-list">
-        {homesList.map((homes) => (
+        {qb.map((homes) => (
           <Card style={{ width: "18rem" }}>
             <Card.Img
               id="img"
