@@ -29,7 +29,7 @@ const nav = () => {
         <ul className="nav-list" id="nav-list">
           <li>
             {" "}
-            <Link className="nav-link" to="/">
+            <Link className="nav-link" to="home">
               Home
             </Link>{" "}
           </li>
@@ -55,14 +55,20 @@ const nav = () => {
           </li>
           <li>
             {" "}
-            <Link className="nav-link" to="signin">
+            <Link className="nav-link " id="login" to="signin">
               Login
             </Link>
           </li>
           <li>
             {" "}
-            <Link className="nav-link" to="signup">
+            <Link className="nav-link" id="signup" to="signup">
               Sign Up
+            </Link>
+          </li>
+          <li>
+            {" "}
+            <Link className="nav-link" id="profile" to="profile" isActive='false'>
+              Profile
             </Link>
           </li>
         </ul>

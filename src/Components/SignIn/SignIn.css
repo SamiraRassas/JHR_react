@@ -16,4 +16,12 @@ article {
 .measure{
   color:white;}
 
+  @media all and (max-width: 480px){
+    .center{
+      flex-direction: column;
+      margin-top: 40px;
+     
+    }
+
+  }
 

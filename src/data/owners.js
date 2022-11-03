@@ -1,4 +1,4 @@
-[
+let owners=[
     {
         "id":"1",
         "fullName":"Nisreen Rassas",
@@ -20,3 +20,17 @@
 
     }
 ]
+export function getOwners() {
+    return owners;
+  }
+  export function getOwnersss(email,pass) {
+    return owners.filter(
+        (owner) => owner.email === email && owner.password=== pass
+    );
+  }
+  export function checkOwner(email,pass) {
+   return owners.find(
+        (owner) => owner.email === email && owner.password=== pass
+      );
+
+  }

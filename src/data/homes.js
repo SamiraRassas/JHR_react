@@ -76,9 +76,28 @@ let homes=[
 export function getHomes() {
     return homes;
   }
+  export function getHomesbyId(id)  {
+    return homes.find(
+        (home) => home.id === id
+          );  
+  }
+export function getHomesByLocation(location) {
+    return homes.filter(
+        (home) => homes.location === location
+    );
+  }
+//   export function getHomesByDetails(location) {
+//     return homes.filter(
+//         (home) => homes.location === location
+//     );
+//   }
 
-  // export function getHomes(number) {
-  //   return invoices.find(
-  //     (invoice) => invoice.number === number
-  //   );
-  // }
+export function getHomesbydetails() {
+    return homes;
+  }
+
+  export function getHomesbydetail(id) {
+   return homes.find(
+  (home) => home.id === id
+    );
+   }

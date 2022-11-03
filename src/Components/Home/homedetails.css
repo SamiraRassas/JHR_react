@@ -1,0 +1,20 @@
+.homedetails {
+  background-color:rgb(65, 103, 173);
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding-left: 50px;
+  z-index: 100;
+  position: absolute;
+  border: 1px solid #555;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40%;
+  top: 50%; /* push down by 50% of the height of the container */
+  width: 40%;
+  margin-top: -25px;
+  overflow: scroll;
+}

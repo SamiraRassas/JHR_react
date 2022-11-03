@@ -1,3 +1,10 @@
 .signup_link {
     justify-content: center;
 }
+@media all and (max-width: 480px){
+
+  }
+#res{
+  color:rgb(183, 1, 1);
+  font-weight: bold;
+}
